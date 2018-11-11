@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using Hardcodet.Wpf.TaskbarNotification;
@@ -40,6 +41,16 @@ namespace Mousepad
                     {
                         new SettingsView().Show();
                     };
+                    menu.Items.Add(item);
+                    item = new MenuItem
+                    {
+                        Header = "Close"
+                    };
+                    item.Click += (sender, args) =>
+                    {
+                        Environment.Exit(0);
+                    };
+
                     menu.Items.Add(item);
                     tb.ContextMenu = menu;
                 }
