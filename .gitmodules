@@ -1,0 +1,3 @@
+[submodule "GamepadLibrary"]
+	path = GamepadLibrary
+	url = git@github.com:brakmic-aleksandar/gamepad-library.git

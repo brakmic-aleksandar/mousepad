@@ -1,0 +1,29 @@
+<Application x:Class="Mousepad.App" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:local="clr-namespace:Mousepad" 
+             xmlns:tb="http://www.hardcodet.net/taskbar" 
+             xmlns:gamepad="clr-namespace:Gamepad;assembly=Gamepad" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             d1p1:Ignorable="d" 
+             xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:services="clr-namespace:Mousepad.Services"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:repositories="clr-namespace:Mousepad.Repositories">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/VectorIcons.xaml"/>
+                <ResourceDictionary>
+                    <tb:TaskbarIcon x:Key="TrayIcon" IconSource="/Resources/TrayIcon.ico" LeftClickCommand="{Binding Application.Current.Click}"/>
+                    <gamepad:GamepadController x:Key="GamepadController"/>
+                    <system:String x:Key="SettingsPath">./Settings.xml</system:String>
+                    <repositories:SettingsRepository x:Key="SettingsRepository"/>
+                    <services:OnScreenKeyboardService x:Key="OnScreenKeyboardService"/>
+                    <services:SettingsService x:Key="SettingsService"/>
+                    <services:GamepadService x:Key="GamepadService"/>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+  </Application.Resources>
+</Application>

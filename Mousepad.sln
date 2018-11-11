@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mousepad", "Mousepad\Mousepad.csproj", "{14C88CDE-134F-4918-AC19-C4A966773278}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamepad", "GamepadLibrary\Gamepad.csproj", "{D9535DF9-6AF4-4B5D-AD09-0A2DDE2D2EF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14C88CDE-134F-4918-AC19-C4A966773278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C88CDE-134F-4918-AC19-C4A966773278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C88CDE-134F-4918-AC19-C4A966773278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C88CDE-134F-4918-AC19-C4A966773278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9535DF9-6AF4-4B5D-AD09-0A2DDE2D2EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9535DF9-6AF4-4B5D-AD09-0A2DDE2D2EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9535DF9-6AF4-4B5D-AD09-0A2DDE2D2EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9535DF9-6AF4-4B5D-AD09-0A2DDE2D2EF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18210DDF-BB84-45BE-9B7B-09E6DF875213}
+	EndGlobalSection
+EndGlobal
